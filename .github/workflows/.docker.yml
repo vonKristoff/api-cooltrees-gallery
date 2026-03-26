@@ -18,4 +18,4 @@ jobs:
         with:
           context: ./api
           push: true
-          tags: ghcr.io/${{ github.repository }}/api:latest
+          tags: ghcr.io/vonkristoff/api-cooltrees-gallery/api:latest
