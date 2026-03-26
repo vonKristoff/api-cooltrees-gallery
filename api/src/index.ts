@@ -11,7 +11,7 @@ app.use("*", async (c, next) => {
 app.get("/files", async (c) => {
   try {
     const files = await readdir("/data", { withFileTypes: true });
-
+    console.log(files);
     const result = files
       .filter((f) => f.isFile())
       .map((f) => ({
